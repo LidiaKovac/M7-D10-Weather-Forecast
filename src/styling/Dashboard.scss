@@ -1,8 +1,90 @@
+:root {
+  //root colors
+  --background-dark: #050505ff;
+  --blue-ryb: #004fffff;
+  --maximum-blue: #31afd4;
+  --background-light: #ffeee9;
+  --rose: #f3452e;
+}
+
 .dash-wrap {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .weather-wrap {
     display: flex;
     flex-direction: column;
-    //justify-content: center;
     align-items: center;
+    justify-content: center;
+    .day {
+      font-size: 25pt;
+    }
+    .temp {
+      filter: opacity(.5);
+      color: white;
+      font-weight: bold;
+      font-size: 15pt;
+      align-self: flex-end;
+      margin-top: 70px;
+      margin-right: 10px;
+      
+    }
+    .move-day-icon {
+      align-self: center;
+      width: 30px;
+      height: 30px;
+    }
+    .weather-inner-wrap {
+      width: 200px;
+      height: 200px;
+      border-radius: 40px;
+      
+      //background-color: var(--rose);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      
+    }
+  }
+  
+}
+
+.snow {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(49, 175, 212, 1) 100%
+  );
+  color: black;
+}
+.clear {
+  background-color: #004fffff;
+  color: white;
+}
+.thunder {
+  background: rgb(110,110,110);
+background: linear-gradient(45deg, rgba(110,110,110,1) 0%, rgba(0,0,45,1) 100%);
+color: white
+}
+
+.clouds {
+  background: rgb(110,110,110);
+}
+.drizzle, .rain {
+  background: rgb(110,110,110);
+  background: linear-gradient(45deg, rgba(110,110,110,1) 0%, rgba(0,230,255,1) 100%);
+}
+.temp-icon {
+  color: white!important;
+  width: 15pt;
+  height: 15pt;
 }

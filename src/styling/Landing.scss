@@ -37,7 +37,7 @@
   @keyframes travel-right {
     0% {
       position: fixed;
-      left: -300px;
+      left: 300px;
     };
     
     100%{
@@ -74,7 +74,7 @@
     width: 260px;
     height: 260px;
     position: fixed;
-    left: -300px;
+    left: 300px;
     bottom: 150px;
     z-index: 0;
     color: #F89A7D;
