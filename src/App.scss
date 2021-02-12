@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap'); //font-family: 'Cabin', sans-serif;
+
+:root { //root colors
+  --background-dark: #050505ff;
+  --blue-ryb: #004fffff;
+  --maximum-blue: #31afd4ff;
+  --background-light: #FFEEE9;
+  --rose: #f3452e;
+  }
+
+.page-light {
+  background: var(--background-light);
+  color: var(--background-dark);
+  font-family: 'Cabin', sans-serif;
+}
+.page-dark {
+  background-color: var(--background-dark);
+  color: var(--background-light);
+  font-family: 'Cabin', sans-serif;
+}

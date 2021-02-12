@@ -1,0 +1,98 @@
+:root {
+  //root colors
+  --background-dark: #050505ff;
+  --blue-ryb: #004fffff;
+  --maximum-blue: #31afd4;
+  --background-light: #ffeee9;
+  --rose: #f3452e;
+}
+
+.landing-wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    padding-left: 850px;
+    font-weight: 500;
+    font-size: 40pt;
+    z-index: 1;
+  }
+  Button {
+      width: 400px;
+      margin-left: 850px;
+      margin-top: 30px;
+      z-index: 1;
+      height: 50px;
+      background-color: var(--rose);
+      border: none;
+      &:active, &:hover, &:focus {
+        background-color: #ff5d48!important;
+        border: none!important
+      }
+     
+  }
+  @keyframes travel-right {
+    0% {
+      position: fixed;
+      left: -300px;
+    };
+    
+    100%{
+      position: fixed;
+      left: 200%;
+    }
+  }
+  @keyframes travel-left {
+    0% {
+        position: fixed;
+      left: 100%;
+      
+    };
+    
+    100%{
+        position: fixed;
+        left: -700px;
+    }
+  }
+
+  /* The element to apply the animation to */
+  .cloud-icon {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    left: -100px;
+    bottom: 450px;
+    z-index: 0;
+    color: #ffcdbe;
+    animation-name: travel-right;
+    animation-duration: 290s;
+  }
+  .cloud-icon-2 {
+    width: 260px;
+    height: 260px;
+    position: fixed;
+    left: -300px;
+    bottom: 150px;
+    z-index: 0;
+    color: #F89A7D;
+    animation-name: travel-right;
+    animation-delay: 3s;
+    animation-duration: 305s;
+  }
+  .cloud-icon-3 {
+    width: 590px;
+    height: 590px;
+    position: fixed;
+    left: 100%;
+    //bottom: 150px;
+    z-index: 0;
+    color: #FFF9F8;
+    animation-name: travel-left;
+    //animation-delay: 3s;
+    
+    animation-duration: 250s;
+  }
+}
