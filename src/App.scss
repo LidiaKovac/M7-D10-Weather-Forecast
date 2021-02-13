@@ -1,22 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap'); //font-family: 'Cabin', sans-serif;
 
-:root { //root colors
+:root {
+  //root colors
   --background-dark: #050505ff;
   --blue-ryb: #004fffff;
   --maximum-blue: #31afd4ff;
   --background-light: #FFEEE9;
   --rose: #f3452e;
-  }
+}
 
 .page-light {
   background: var(--background-light);
   color: var(--background-dark);
+  background-repeat: repeat !important;
   font-family: 'Cabin', sans-serif;
+  overflow-x: hidden;
 }
+
 .page-dark {
   background-color: var(--background-dark);
   color: var(--background-light);
+  background-repeat: repeat !important;
   font-family: 'Cabin', sans-serif;
+  overflow-x: hidden;
 }
 
 .cabin {
