@@ -42,7 +42,7 @@ const Dashboard = (props) => {
   const fetchWeather = async () => {
     setLoading(true);
     let responseC = await fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${props.city.city}&appid=${process.env.REACT_APP_API_KEY}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${props.city.city}&appid=${process.env.REACT_APP_API_KEY}`
     );
     let coordsData = await responseC.json();
     let coords = coordsData[0];
