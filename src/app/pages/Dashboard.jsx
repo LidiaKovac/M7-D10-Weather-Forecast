@@ -41,21 +41,12 @@ const Dashboard = (props) => {
 
   const fetchWeather = async () => {
     setLoading(true);
-    let responseC = await fetch(
-      `https://api.openweathermap.org/geo/1.0/direct?q=${props.city.city}&appid=${process.env.REACT_APP_API_KEY}`
-    );
-    let coordsData = await responseC.json();
-    let coords = coordsData[0];
-    console.log(coords);
-    (await coords) && (await props.get_coords(coords.lat, coords.lon));
-
     let response = await fetch(
-      ` https://api.openweathermap.org/data/2.5/onecall?exclude=alerts&units=metric&lat=${coords ? coords.lat : "45.4643"
-      }&lon=${coords ? coords.lon : "9.1895"}&appid=${process.env.REACT_APP_API_KEY
-      }`
+      `${process.env.REACT_APP_BE_URL}${props.city.city}`
     );
     let weather = await response.json();
-    props.get_weather(weather);
+    await props.get_weather(weather);
+
 
     setLoading(false);
   };
