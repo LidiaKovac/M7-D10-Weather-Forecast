@@ -42,7 +42,7 @@ const Dashboard = (props) => {
   const fetchWeather = async () => {
     setLoading(true);
     let response = await fetch(
-      `${process.env.REACT_APP_BE_URL}${props.city.city}`
+      `${process.env.REACT_APP_BE_URL}weather/${props.city.city}`
     );
     let weather = await response.json();
     await props.get_weather(weather);
