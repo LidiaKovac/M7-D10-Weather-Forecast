@@ -1,6 +1,6 @@
 import { createStore, combineReducers, compose, applyMiddleware } from "redux";
 import queryReducer from "../reducer/query";
-import coordsReducer from '../reducer/coords'
+//import coordsReducer from '../reducer/coords'
 import weatherReducer from '../reducer/weather'
 import thunk from "redux-thunk";
 
